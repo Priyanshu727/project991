@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    list-style: none;
+    text-decoration: none !important;  
+    font-family: 'Urbanist';
+    color: aliceblue;
+}
+:root{
+    --primary:#2a2f36;
+    --secondry:#2785ff;
+    --text-color:#86909d;
+    --bg-color:#1c2434;
+    --bg-color2:#181f2d;
+    --bg-color3:#111826;
+    
+}
+.pt-110{
+    padding-top: 110px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-55{
+    margin-bottom: 55px;
+}
+.text-justify {
+    text-align: justify;
+}
+.main{
+    background-image: url('../images/oc-banner-bg.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search{
+    position: relative;
+}
+input{
+    border-radius: 5px;
+    background: none;
+    height: 45px;
+    padding: 0 50px 0 20px;
+    color: var(--clr-common-heading);   
+    border: 1px solid #2d3136;
+    width: 100%;
+}
+.button{
+    position: absolute;
+    right: 63px;
+    top: 12px;
+    color: #919191;
+    border: none;
+    background: transparent;
+}
+.menu ul li a{
+    color: var(--bs-light);
+    font-weight: 600;
+}
+.menu ul li:hover a{
+    color: #2b81ff;
+}
+ .menu ul li :hover i{
+    color: #2b81ff; 
+} 
+.profile img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.btn{
+    font-weight: 600;
+    background-image: linear-gradient(90deg,#2b81ff,#7237ff,#2b81ff);
+    background-size: 200% 100%;
+    transition: all .3s linear !important;
+}
+.btn:hover{
+    background-position: 100% 100%; 
+    transition: all .3s ease-in-out !important; 
+}
+.mark i{
+    background-color: #2b81ff;
+    font-size: 18px;
+}
+header{
+    border-bottom: 1px solid #2d3136;
+}
+.mark{
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+    line-height: 16px;
+    font-size: 2px;
+    right: 0;
+    bottom: 0;
+    background-color: #2b81ff;
+    
+}
+.main-banner{
+    padding-top: 130px;
+}
+.banner-content h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.banner-content h1 span {
+    font-weight: 800;
+    color:#2785ff;
+}
+.banner-content p {
+    font-size: 20px;
+    color: #86909d;
+}
+.oc-banner-counter .art-meta-notice {
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+.oc-banner-counter .art-meta-type {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: inherit;
+    margin-bottom: 0;
+}
+.arow{
+    left: -40%;
+    top: 50px;
+    filter: blur(2px);
+}
+.oc-banner-ima-1 {
+    border-radius: 13px;
+    top: -98px;
+    right: 238px;
+    z-index: 1;
+    object-fit: cover;
+}
+.oc-banner-ima-2 {
+    border-radius: 13px;
+    top: 111 px;
+    left: -148px;
+}
+.oc-banner-ima-3 {
+    top: -29px;
+    right: -182px;
+}
+.oc-banner-ima-3 img{
+    border-radius: 14px;
+}
+.oc-banner-ima-4 {
+    border-radius: 13px;
+    bottom: 60px;
+    left: -96px;
+}
+.member a{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -13px;
+}
+.member a img{
+    height: 100%;
+    width: 100%;
+}
+.oc-banner-client {
+    z-index: 2;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 300px;
+    left: -63px;
+    height: 185px;
+    background: transparent;
+    border: 1px solid rgba(162,175,200,.31);
+    backdrop-filter: blur(12px);
+    background-color: rgba(255,255,255,.05);
+    top: 340px;
+}
+/* sub-banner */
+.oc-wallet-text h5{
+    color: var(--text-color);
+}
+.oc-wallet-text:hover h5{
+    color: azure;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+/* sub banner end */
+/* live section start */
+.live-blink{
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 6px solid var(--secondry);
+    border-radius: 50px;
+    top: 0px;
+    left: 0px;
+}
+
+.oc-cat-img img{
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+}
+.oc-cat-img:hover img{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+.col-profile img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.col-mark i{
+    background-color: #2b81ff;
+    font-size: 8px;
+}
+.col-mark{
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+    line-height: 1px;
+    font-size: 1px;
+    left: 16px;
+    bottom: 5px;
+    background-color: #2b81ff;
+    
+}
+.col-text h6{
+    color: var(--text-color);
+    font-size: 12px;
+}
+.col-text .dots{
+    top: 18px !important;
+    right: -371px !important;
+    width: 100% !important;
+}
+.col-text .dots i{
+    color: var(--text-color);
+}
+.art{
+    transition: all 5s ease-in-out;
+}
+.art-btn{
+    top: 146px;
+    right: 153px;
+    transition: all 5s ease-in-out;
+    /* opacity: 0; */
+}
+.art:hover .art-btn{
+    /* opacity: 1 !important; */
+    display: block !important;
+}
+/* live section end */
+
+.arts-btn{
+    top: 105px;
+    right: 87px;
+}
+.art:hover .arts-btn{
+    display: block !important;
+    transition: all 0.2s ease-in-out;
+}
+.dots-2{
+    right: 4px;
+    top: 18px;
+}
+.dots-2 i{
+    color: var(--text-color);
+}
+/* gallery section start */
+.collection-big{
+    height: 100%;
+}
+.collection-art-2{
+    height: 100%;
+}
+.collection-img-2{
+    height: 100%;
+}
+.main-collection{
+    height: 100%;
+}
+.collection-number .coll-nub{
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+}
+/* gallery section end */
+
+
+/* sale start */
+.work-img img{
+    transition: all 0.5s ease-in-out;
+}
+.work-img:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.step-no{
+    right: 30px;
+    top: 10px;
+    opacity: 0.2;
+}
+.step-no .number{
+    font-size: 60px;
+    color: var(--text-color);
+}
+.step{
+    right: 34px;
+    top: 34px;
+    z-index: 2;
+}
+.step .step-cont{
+    color: var(--text-color);
+}
+/* sale end */
+/* footer start */
+.footer-link .f-icon:hover {
+    background-color: rgb(16, 83, 151) !important;
+    transition: all 0.2s ease-in-out;
+}
+.footer-list>li>a{
+    color: var(--text-color);
+}
+.footer-list li:hover a{
+    color: aliceblue;
+    transition: all 0.2s ease-in-out;
+}
+/* footer end */
+
+.bhai{
+    max-width: 520px;
+}

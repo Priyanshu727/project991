@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="asset/images/download (1).jpg">
+
+    <title>Oction - NFT Marketplace React,</title>
+
+    <!-- link boots font -->
+    <link rel="stylesheet" href="asset/css/bootstrap-icons.css">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="asset/css/animate.css">
+    <!-- link font of css -->
+    <link rel="stylesheet" href="asset/font/stylesheet.css">
+    <!-- link owl -->
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- link boots -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!-- link media -->
+    <link rel="stylesheet" href="asset/css/media.css">
+</head>
+
+<body>
+    <div class="main">
+        <!------------------header start------------>
+        <header class="overflow-hidden">
+            <div class="container-fluid ">
+                <div
+                    class=" main-header py-4 d-flex justify-content-between justify-content-lg-evenly align-items-center">
+                    <div class="logo px-5">
+                        <img src="asset/images/oction-logo-bw.png" alt="">
+                    </div>
+                    <div class="menu text-center mt-3 px-3 d-none d-lg-flex">
+                        <ul class="d-flex fs-6 ">
+                            <li class="me-4"><a href="#">Home <i class="bi bi-chevron-down"></i></a></li>
+                            <li class="me-4"><a href="#">Explore</a></li>
+                            <li class="me-4"><a href="#">Creators</a></li>
+                            <li class="me-4"><a href="#">Pages <i class="bi bi-chevron-down"></i></a></li>
+                            <li class="me-4"><a href="#">Forum</a></li>
+                            <li class="me-4"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="search pe-3 d-none d-xl-block">
+                        <input type="text" placeholder="search keyword">
+                        <button class="button"><i class="bi bi-search"></i></button>
+                    </div>
+                    <button type="button" class="btn btn-lg text-white" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Connect Wallet</button>
+
+                    <!-- model start -->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content" style="background-color: var(--bg-color2);">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"
+                                        style="color: var(--text-color);">New message</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label"
+                                                style="color: var(--text-color);">Recipient:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label"
+                                                style="color: var(--text-color);">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- model end -->
+
+                    <div class="icon  position-relative d-none d-xxl-block">
+                        <div class="profile">
+                            <img src="asset/images/profile4.jpg" alt="">
+                        </div>
+                        <div
+                            class="mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!---------------headetr end------------->
+        <!-----------main banner start-------------->
+        <div class="main-banner position-relative">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-xl-6 position-relative mb-lg-5 mb-md-5 mb-55">
+                        <div class="arow position-absolute">
+                            <img src="asset/images/b1-shape1.png" alt="">
+                        </div>
+                        <div class="banner-content banner-content1 banner-content1-1 pt-0 ">
+                            <h1>Discover Digital Artworks & Collect Best
+                                <span>NFTs</span>
+                            </h1>
+                            <p class="mb-4">There is enough digital artworks available online to help you put</br>
+                                together
+                                crypto currency website.</p>
+                        </div>
+                        <div class="banner-btn mb-5">
+                            <button type="button" class="btn btn-lg text-white fs-5 fw-normal " data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Explore Now</button>
+
+                            <!-- model start -->
+
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="background-color: var(--bg-color2);">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Explor</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="tet" style="color: var(--text-color);">Work In Progress</h2>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+
+
+                        <!--model end  -->
+
+
+                        <div class="oc-banner-counter d-flex gap-5 mt-5">
+                            <div class="art-meta-item">
+                                <div class="art-meta-notice">
+                                    <span class="counter">85</span>k+
+                                </div>
+                                <div class="art-meta-type">Digital Artworks</div>
+                            </div>
+                            <div class="art-meta-item">
+                                <div class="art-meta-notice">
+                                    <span class="counter">25</span>k+
+                                </div>
+                                <div class="art-meta-type">Global Creators</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" oc-banner-img col-xl-5 col-lg-6 ">
+                        <div class="position-relative bhai">
+                            <div class="oc-banner-ima-1 position-absolute overflow-hidden">
+                                <img src="asset/images/oc-banner-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="oc-banner-ima-2 position-absolute overflow-hidden">
+                                <img src="asset/images/oc-banner-2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="oc-banner-ima-3 position-relative ">
+                                <img src="asset/images/oc-banner-3.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="oc-banner-ima-4 position-absolute overflow-hidden">
+                                <img src="asset/images/oc-banner-4.jpg" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="oc-banner-client position-absolute">
+                                <div class="client-item d-flex">
+                                    <div class="member d-flex">
+                                        <a href="">
+                                            <img src="asset/images/profile1.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="">
+                                            <img src="asset/images/profile2.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="">
+                                            <img src="asset/images/profile3.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="">
+                                            <img src="asset/images/profile4.jpg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="">
+                                            <img src="asset/images/profile5.jpg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="view-member ms-2">
+                                        <span>More then</span>
+                                        <span>25k+</span>
+                                    </div>
+                                </div>
+                                <p class="mt-3">Digital art creators and sellers joined us to sale and create their own
+                                    NFT
+                                    to our marketplace</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------main banner end-------------->
+    <!-----------sub banner start------------->
+
+    <!-- <section class="oc-wallet" style="background-color: #111826;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-110">
+                    <div class="wallet-title text-center">
+                        <h2 class="fw-bold">Set Your Wallet</h2>
+                        <p class="pb-4" style="color:#86909d">Here are a few reasons why you should choose Oction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-sm-4 py-4 mx-3 mt-3 rounded" style="background-color:#1c2434;">
+                            <div class="oc-wallet-text text-center">
+                                <div class="oc-wallet-icon text-center mb-4">
+                                    <img src="asset/images/oc-wallet-1.png" alt="">
+                                </div>
+                                <h5 class="fw-bold">Use Friendly</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 py-4 mx-3 mt-3 rounded" style="background-color:#1c2434;">
+                            <div class="oc-wallet-text text-center">
+                                <div class="oc-wallet-icon text-center mb-4">
+                                    <img src="asset/images/oc-wallet-2.png" alt="">
+                                </div>
+                                <h5 class="fw-bold">Binance</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 py-4 mx-3 mt-3 rounded" style="background-color:#1c2434;">
+                            <div class="oc-wallet-text text-center">
+                                <div class="oc-wallet-icon text-center mb-4">
+                                    <img src="asset/images/oc-wallet-3.png" alt="">
+                                </div>
+                                <h5 class="fw-bold">Formatic</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 py-4 mx-3 mt-3 rounded" style="background-color:#1c2434;">
+                            <div class="oc-wallet-text text-center">
+                                <div class="oc-wallet-icon text-center mb-4">
+                                    <img src="asset/images/oc-wallet-4.png" alt="">
+                                </div>
+                                <h5 class="fw-bold">Autherum</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 py-4 mx-3 mt-lg-3 mt-3 rounded" style="background-color:#1c2434;">
+                            <div class="oc-wallet-text text-center">
+                                <div class="oc-wallet-icon text-center mb-4">
+                                    <img src="asset/images/oc-wallet-5.png" alt="">
+                                </div>
+                                <h5 class="fw-bold">Coinbase</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section> -->
+    <!-----------sub banner end------------->
+    <!---------------live section start--------->
+    <!-- <section class="live-area pt-80 pb-100" style="background-color: #111826;">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="live-section d-flex position-relative">
+                        <div class="live-blink position-absolute spinner-grow " style="background-color: transparent;">
+                        </div>
+                        <h2 class="live-text lh-1 ps-5 fw-normal">Live Bids</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme mt-4">
+                <div class="item">
+                    <div class="col me-3">
+                        <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                            <div class="art overflow-hidden rounded-2 position-relative">
+                                <img src="asset/images/svunsdivsdv.jpg" alt="" class="img-fluid">
+                                <div class="art-btn position-absolute d-none left-0">
+                                    <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                                </div>
+                            </div>
+                            <div class="col-text d-flex position-relative">
+                                <div class=" col-icon  position-relative pt-3">
+                                    <div class=" col-profile">
+                                        <img src="asset/images/profile4.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <h6 class="pt-4 ps-2">@machman</h6>
+                                <div class="dots position-absolute">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-1">Baloon Maker</h6>
+                            <div class="art-info d-flex justify-content-between">
+                                <div class="art-item">
+                                    <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                    <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                                </div>
+                                <div class="art-activity-btn pt-4">
+                                    <a class="art" href="" style="color: var(--text-color);">
+                                        Activity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col me-3">
+                        <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                            <div class="art overflow-hidden rounded-2 position-relative">
+                                <img src="asset/images/vhdfivsdfgv.jpg" alt="" class="img-fluid">
+                                <div class="art-btn position-absolute d-none left-0">
+                                    <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                                </div>
+                            </div>
+                            <div class=" col-text d-flex position-relative">
+                                <div class=" col-icon  position-relative pt-3">
+                                    <div class=" col-profile">
+                                        <img src="asset/images/profile2.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <h6 class="pt-4 ps-2">@machman</h6>
+                                <div class="dots position-absolute">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-1">Vector Painting</h6>
+                            <div class="art-info d-flex justify-content-between">
+                                <div class="art-item">
+                                    <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                    <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                                </div>
+                                <div class="art-activity-btn pt-4">
+                                    <a class="art" href="" style="color: var(--text-color);">
+                                        Activity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col me-3">
+                        <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                            <div class="art overflow-hidden rounded-2 position-relative">
+                                <img src="asset/images/624415f0c23c9169046500.gif" alt="" class="img-fluid">
+                                <div class="art-btn position-absolute d-none left-0">
+                                    <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                                </div>
+                            </div>
+                            <div class=" col-text d-flex position-relative">
+                                <div class=" col-icon  position-relative pt-3">
+                                    <div class=" col-profile">
+                                        <img src="asset/images/profile4.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <h6 class="pt-4 ps-2">@machman</h6>
+                                <div class="dots position-absolute">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-1">Baloon Maker</h6>
+                            <div class="art-info d-flex justify-content-between">
+                                <div class="art-item">
+                                    <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                    <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                                </div>
+                                <div class="art-activity-btn pt-4">
+                                    <a class="art" href="" style="color: var(--text-color);">
+                                        Activity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col me-3">
+                        <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                            <div class="art overflow-hidden rounded-2 position-relative">
+                                <img src="asset/images/art2.jpg" alt="" class="img-fluid">
+                                <div class="art-btn position-absolute d-none left-0">
+                                    <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                                </div>
+                            </div>
+                            <div class="col-text d-flex position-relative">
+                                <div class=" col-icon  position-relative pt-3">
+                                    <div class=" col-profile">
+                                        <img src="asset/images/profile2.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <h6 class="pt-4 ps-2">@machman</h6>
+                                <div class="dots position-absolute">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-1">Baloon Maker</h6>
+                            <div class="art-info d-flex justify-content-between">
+                                <div class="art-item">
+                                    <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                    <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                                </div>
+                                <div class="art-activity-btn pt-4">
+                                    <a class="art" href="" style="color: var(--text-color);">
+                                        Activity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="col me-3">
+                        <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                            <div class="art overflow-hidden rounded-2 position-relative">
+                                <img src="asset/images/62441afe467d8699022690.gif" alt="" class="img-fluid">
+                                <div class="art-btn position-absolute d-none left-0">
+                                    <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                                </div>
+                            </div>
+                            <div class=" col-text d-flex position-relative">
+                                <div class=" col-icon  position-relative pt-3">
+                                    <div class=" col-profile">
+                                        <img src="asset/images/profile4.jpg" alt="">
+                                    </div>
+                                    <div
+                                        class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <h6 class="pt-4 ps-2">@machman</h6>
+                                <div class="dots position-absolute">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-1">Baloon Maker</h6>
+                            <div class="art-info d-flex justify-content-between">
+                                <div class="art-item">
+                                    <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                    <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                                </div>
+                                <div class="art-activity-btn pt-4">
+                                    <a class="art" href="" style="color: var(--text-color);">
+                                        Activity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!---------------live section end----------->
+
+
+
+    <!----------------category start------------>
+    <!-- <section class="oc- category pt-110 pb-100" style="background-color: #1c2434;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="category-title text-center mb-40">
+                        <h2 class="cat-heading fw-bold">Browse by Category</h2>
+                        <p class="cat-para" style="color:#86909d">Here are a few reasons why you should choose Oction
+                            for sell your NFT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-1.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">3D Artwork</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-2.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">Video & Music</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-3.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">Trading Elements</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-4.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">Photography</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-5.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">PSD Mockup</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-6.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">Historical Book</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-7.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">Game & Software</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="oc-cat-main text-center mb-55">
+                        <div class="oc-cat-img rounded-4 overflow-hidden mb-3">
+                            <img src="asset/images/oc-category-8.jpg" alt="">
+                        </div>
+                        <h5 class="fw-bold">Photo & Image</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!---------------category end-------------->
+
+
+
+    <!---------------gallery start------------->
+    <!-- <section class="main-gallery  pt-110 pb-100" style="background-color:var(--bg-color2);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="category-title text-center mb-5">
+                        <h2 class="cat-heading fw-bold">Popular Collection</h2>
+                        <p class="cat-para" style="color:#86909d">Browse most popular collections and Choose between
+                            auctions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 main-collection ">
+                    <div class="extra p-2 rounded-2" style="background-color: var(--bg-color);">
+                        <div class="collection my-3">
+                            <div class="d-flex">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4">
+                                                    <img src="asset/images/art26.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4 mt-2">
+                                                    <img src="asset/images/art10.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12 collection-big">
+                                        <div class="collection-art-2">
+                                            <div class="collection-img-2 overflow-hidden rounded-4 ms-2">
+                                                <img src="asset/images/art20.jpg" width="100%" height="100%" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="collection-title col-6">
+                                    <h5 class="fw-semibold">
+                                        Artwork
+                                    </h5>
+                                </div>
+                                <div class="dot-3 col-6 text-end pe-2 d-inline" style="color: var(--text-color);">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-number pb-4 pt-3 ">
+                            <span class="coll-nub p-1 rounded-2">
+                                475 items
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 main-collection">
+                    <div class="extra p-2 rounded-2" style="background-color: var(--bg-color);">
+                        <div class="collection my-3">
+                            <div class="d-flex">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4">
+                                                    <img src="asset/images/art31.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4 mt-2">
+                                                    <img src="asset/images/art32.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12 collection-big">
+                                        <div class="collection-art-2 ">
+                                            <div class="collection-img-2 overflow-hidden rounded-4 ms-2">
+                                                <img src="asset/images/art33.jpg" width="100%" height="100%" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="collection-title col-6 ">
+                                    <h5 class="fw-bold">
+                                        Abstract Art
+                                    </h5>
+                                </div>
+                                <div class="dot-3 col-6 text-end pe-2" style="color: var(--text-color);">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-number pb-4 pt-3 ">
+                            <span class="coll-nub p-1 rounded-2">
+                                585 items
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6  main-collection ">
+                    <div class="extra p-2 rounded-2" style="background-color: var(--bg-color);">
+                        <div class="collection my-3">
+                            <div class="d-flex">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4">
+                                                    <img src="asset/images/art36.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4 mt-2">
+                                                    <img src="asset/images/art35.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12 collection-big">
+                                        <div class="collection-art-2 ">
+                                            <div class="collection-img-2 overflow-hidden rounded-4 ms-2">
+                                                <img src="asset/images/art34.jpg" width="100%" height="100%" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="collection-title col-6">
+                                    <h5 class="fw-bold">
+                                        Digital
+                                    </h5>
+                                </div>
+                                <div class="dot-3 col-6 text-end pe-2" style="color: var(--text-color);">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-number pb-4 pt-3 ">
+                            <span class="coll-nub p-1 rounded-2">
+                                695 items
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 main-collection ">
+                    <div class="extra p-2 rounded-2" style="background-color: var(--bg-color);">
+                        <div class="collection my-3">
+                            <div class="d-flex">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4">
+                                                    <img src="asset/images/art37.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="collection-art">
+                                                <div class="collection-img overflow-hidden rounded-4 mt-2">
+                                                    <img src="asset/images/art38.jpg" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="col-12 collection-big">
+                                        <div class="collection-art-2 ">
+                                            <div class="collection-img-2 overflow-hidden rounded-4 ms-2">
+                                                <img src="asset/images/art39.jpg" width="100%" height="100%" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="collection-title col-6 ">
+                                    <h5 class="fw-bold">
+                                        Creative
+                                    </h5>
+                                </div>
+                                <div class="dot-3 col-6 text-end pe-2" style="color: var(--text-color);">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collection-number pb-4 pt-3 ">
+                            <span class="coll-nub p-1 rounded-2">
+                                325 items
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!---------------gallery end--------------->
+
+
+    <!---------------artwork start------------->
+    <!-- <section class="artwork" style="background-color: var(--bg-color2);">
+        <div class="container pb-100">
+            <div class="col-12 ">
+                <div class="artwork-title-main row pt-5">
+                    <div class="col-4">
+                        <div class="artwork-title">
+                            <h2 class="fw-bold">Explore Artworks</h2>
+                        </div>
+                    </div>
+                    <div class="col-8 d-flex gap-3 d-none d-lg-flex">
+                        <div class="col-3 mb-5">
+                            <select class="form-select fw-bold" style="background-color: var(--primary); color:white;">
+                                <option selected>Sale Type</option>
+                                <option value="1">Fixed</option>
+                                <option value="2">Auction</option>
+                                <option value="3">On sale</option>
+                            </select>
+                        </div>
+                        <div class="col-3 mb-5">
+                            <select class="form-select fw-bold" style="background-color: var(--primary); color:white;">
+                                <option selected>Category</option>
+                                <option value="1">3D Artwork</option>
+                                <option value="2">Video</option>
+                                <option value="3">Animation</option>
+                                <option value="4">Games</option>
+                                <option value="5">Software</option>
+                                <option value="6">Photography</option>
+                            </select>
+                        </div>
+                        <div class="col-3 mb-5">
+                            <select class="form-select fw-bold" style="background-color: var(--primary); color:white;">
+                                <option selected>Status</option>
+                                <option value="1">New</option>
+                                <option value="2">Featured</option>
+                            </select>
+                        </div>
+                        <div class="col-3 mb-5">
+                            <select class="form-select fw-bold" style="background-color: var(--primary); color:white;">
+                                <option selected>Price</option>
+                                <option value="1">High</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 row">
+                <div class="col-12  col-md-6 col-lg-3 mb-sm-5 mb-lg-0 mt-3">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/624419cdcc721482318301.gif" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class=" col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile2.jpg" alt="">
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Vector Painting</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3 mb-sm-5 mb-lg-0 mt-md-3">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/art2.jpg" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class=" col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile4.jpg" alt="">
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Baloon Maker</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3 mb-sm-5 mb-lg-0 mt-md-3">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/62441afe467d8699022690.gif" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class="col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile2.jpg" alt="">
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Baloon Maker</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3 mt-md-3">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/svunsdivsdv.jpg" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class=" col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile4.jpg" alt="">
+
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Baloon Maker</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 row mt-5">
+                <div class="col-12  col-md-6 col-lg-3 mb-sm-5 mb-lg-0 ">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/vhdfivsdfgv.jpg" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class=" col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile2.jpg" alt="">
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Vector Painting</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3 mb-sm-5 mb-lg-0 mt-md-3">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/art7.jpg" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class=" col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile4.jpg" alt="">
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Baloon Maker</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3 mb-sm-5 mb-lg-0 mt-md-3">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/art10.jpg" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class="col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile2.jpg" alt="">
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Baloon Maker</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3 ">
+                    <div class="art-item p-3 rounded-2" style="background-color: #1c2434;">
+                        <div class="art overflow-hidden rounded-2 position-relative">
+                            <img src="asset/images/art6.jpg" alt="" class="img-fluid">
+                            <div class="arts-btn position-absolute d-none left-0">
+                                <button type="button" class="btn btn-sm text-white fs-6">Place Bid</button>
+                            </div>
+                        </div>
+                        <div class=" col-text d-flex position-relative">
+                            <div class=" col-icon  position-relative pt-3">
+                                <div class=" col-profile">
+                                    <img src="asset/images/profile4.jpg" alt="">
+
+                                </div>
+                                <div
+                                    class="col-mark rounded-circle text-center border border-1 border-dark overflow-hidden position-absolute left-0">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <h6 class="pt-4 ps-2">@machman</h6>
+                            <div class="dots-2 position-absolute">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <h6 class="pt-1">Baloon Maker</h6>
+                        <div class="art-info d-flex justify-content-between">
+                            <div class="art-item">
+                                <div class="art-type" style="color:var(--text-color);">Current Bid</div>
+                                <div class="art-price fw-bold" style="color: var(--secondry);">76.46 ETH</div>
+                            </div>
+                            <div class="art-activity-btn pt-4">
+                                <a class="art" href="" style="color: var(--text-color);">
+                                    Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!---------------artwork end--------------->
+
+
+
+    <!-----------creat and sale start---------->
+    <!-- <section class="main-sale pt-110 pb-100" style="background-color:var(--bg-color3);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="category-title text-center mb-40">
+                        <h2 class="cat-heading fw-bold pb-3">Create and sell your NFTs</h2>
+                        <p class="cat-para pb-5" style="color:#86909d">
+                            Here are a few reasons why you should choose Oction
+                            for sell your NFT
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sale-process">
+                <div class="row">
+                    <div class="sale col-lg-4 px-lg-2 mt-md-3">
+                        <div class="work-process rounded-2" style="background-color: var(--bg-color2);">
+                            <div class="work-item text-center position-relative py-5">
+                                <div class="step-no position-absolute">
+                                    <h2 class="number fw-bolder">01</h2>
+                                </div>
+                                <div class="step position-absolute ">
+                                    <h5 class="step-cont ">step</h5>
+                                </div>
+                                <div class="work-img text-center">
+                                    <img src="asset/images/connect-icon.png" alt="">
+                                </div>
+                                <h4 class="work-heading py-4 fw-bold">Connect your wallet</h4>
+                                <p class="work-contenet text-center lh-4" style="color:var(--text-color)">NFTs are the
+                                    latest and greatest<br /> application of blockchain technology,<br /> and
+                                    marketplace has become<br /> theplatform for NFT.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" sale col-lg-4 px-lg-2 mt-md-3">
+                        <div class="work-process rounded-2" style="background-color: var(--bg-color2);">
+                            <div class="work-item text-center position-relative py-5">
+                                <div class="step-no position-absolute">
+                                    <h2 class="number fw-bolder">02</h2>
+                                </div>
+                                <div class="step position-absolute ">
+                                    <h5 class="step-cont ">step</h5>
+                                </div>
+                                <div class="work-img text-center">
+                                    <img src="asset/images/create-collection.png" alt="">
+                                </div>
+                                <h4 class="work-heading py-4 fw-bold">Create Collectiont</h4>
+                                <p class="work-contenet text-center lh-4" style="color:var(--text-color)">NFTs are the
+                                    latest and greatest<br /> application of blockchain technology,<br /> and
+                                    marketplace has become<br /> theplatform for NFT.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" sale col-lg-4 px-lg-2 mt-md-3">
+                        <div class="work-process rounded-2" style="background-color: var(--bg-color2);">
+                            <div class="work-item text-center position-relative py-5">
+                                <div class="step-no position-absolute">
+                                    <h2 class="number fw-bolder">03</h2>
+                                </div>
+                                <div class="step position-absolute ">
+                                    <h5 class="step-cont ">step</h5>
+                                </div>
+                                <div class="work-img text-center">
+                                    <img src="asset/images/list-icon.png" alt="">
+                                </div>
+                                <h4 class="work-heading py-4 fw-bold">List them to sale</h4>
+                                <p class="work-contenet text-center lh-4" style="color:var(--text-color)">NFTs are the
+                                    latest and greatest<br /> application of blockchain technology,<br /> and
+                                    marketplace has become<br /> theplatform for NFT.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section> -->
+    <!-----------creat and sale end------------>
+
+    <!-------------footer start--------------->
+    <!-- <footer class="main-footert" style="background-color: var(--bg-color2);">
+        <section class="footer-area pt-80 pb-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-cont ">
+                            <div class="footer-logo">
+                                <img src="asset/images/oction-logo-bw.png" alt="">
+                            </div>
+                            <p class="footer-text lh-lg pt-4 fw-normal" style="color:var(--text-color)">We provide
+                                one-stop solutions for all IT items; your bliss is just a click away. Star Tech trusts
+                                in quality client</p>
+                            <div class="footer-link ">
+                                <ul class="footer-icon d-flex gap-4 p-0">
+                                    <li class="f-icon rounded-circle p-3 text-center"
+                                        style="background-color: var(--bg-color3)">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </li>
+                                    <li class="f-icon  rounded-circle p-3 text-center"
+                                        style="background-color: var(--bg-color3);">
+                                        <a href="">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-icon  rounded-circle p-3 text-center"
+                                        style="background-color: var(--bg-color3);">
+                                        <a href="">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="f-icon  rounded-circle p-3 text-center"
+                                        style="background-color: var(--bg-color3);">
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="footer-title ps-4 pb-4 ">
+                                <h4>Marketplace</h4>
+                            </div>
+                            <ul class="footer-list text-justify lh-lg">
+                                <li>
+                                    <a href="">
+                                        Proper Guidelines
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Buy Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Compare Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Career
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Build Ecommerce
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget ">
+                            <div class="footer-title ps-4 pb-4">
+                                <h4>Explore Artworks</h4>
+                            </div>
+                            <ul class="footer-list text-justify lh-lg">
+                                <li>
+                                    <a href="">
+                                        3D Artworks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Photography
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Flat Illustration
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Painting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Intro Videos
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="footer-title ps-4 pb-4">
+                                <h4>Insight Community</h4>
+                            </div>
+                            <ul class="footer-list text-justify lh-lg">
+                                <li>
+                                    <a href="">
+                                        Global Partners
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Forum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Virtual World
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Brand Assets
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 rounded" style="background-color: var(--bg-color3);">
+                <div class="copy-right-area py-4 ">
+                    <div class="row justify-content-evenly">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="copy border-end border-light lh-lg">
+                                © Copyrighted & Designed<br /> by
+                                <span><a href="">BDev</a></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="support d-flex px-3 border-end ">
+                                <div class="custom fs-1 pe-5">
+                                    <i class="fa-solid fa-headphones-simple"></i>
+                                </div>
+                                <div class="support-text">
+                                    <p>Have a question? Call us 24/7</p>
+                                    <a href="">(987) 547587587</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="support-mail pt-2">
+                                <div class="input-group  ">
+                                    <input type="text" class="form-control py-4" placeholder="Enter e-mail" />
+                                    <div class="input-group-text" id="btnGroupAddon">
+                                        <button type="button" class="btn btn-sm text-white fs-6">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer> -->
+    <!---------------footer end--------------->
+
+    <script src="asset/jq/jquery-3.6.3.min.js"></script>
+    <script src="asset/js/owl.carousel.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/bootstrap.bundle.js "></script>
+    <!-- wow.js start-->
+    <script src="asset/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- wow end -->
+</body>
+
+</html>
